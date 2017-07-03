@@ -13,8 +13,11 @@ verifier:
   name: inspec
 
 platforms:
-  - name: ubuntu-16.04
-  - name: centos-7.3
+  - name: windows
+    driver:
+      box: windows
+      box_url: windows
+      vagrantfile_erb: Vagrantfile.erb
 
 suites:
   - name: default
